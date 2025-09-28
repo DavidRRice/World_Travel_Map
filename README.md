@@ -35,9 +35,25 @@ pip install geopandas matplotlib shapely
 ## Setup
 
 1. Download the repository
+
+2. Download the Natural Earth data (1:10m resolution):
+   - [Admin 0 – Countries](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/)
+   - [Admin 1 – States/Provinces](https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/)
+
+3. Place the files inside a folder named **`NaturalEarth/`** next to the script:
+
+```
+project-root/
+├── NaturalEarth/
+│   ├── ne_10m_admin_0_countries.shp
+│   ├── ne_10m_admin_0_countries.dbf
+│   ├── ne_10m_admin_0_countries.shx
+│   ├── ne_10m_admin_1_states_provinces.shp
+│   └── ...
+└── travel_map.py
 ```
 
-3. Prepare one or more text files containing **ISO3 country codes**, one per line.  
+4. Prepare one or more text files containing **ISO3 country codes**, one per line.  
 Example (`visited.txt`):
 
 ```
